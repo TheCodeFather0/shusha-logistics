@@ -7,6 +7,11 @@
   src: url(../fonts/poppins/Poppins-Regular.ttf);
 }
 
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +30,19 @@
 
 .row {
   display: flex;
+}
+
+.myButton {
+  background-color: var(--currentColor);
+  color: #fff;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+}
+
+.myButton:hover {
+  background-color: transparent;
+  border: 1px solid var(--currentColor);
+  color: #000;
 }
 
 /********************************************/
@@ -56,7 +74,7 @@ header .headerTop .right .socialMediaIcon {
 
 .banner {
   background-image: url(../images/banner.png);
-  padding: 30px;
+  padding: 60px 0;
 }
 
 main .banner .navbar {
@@ -72,15 +90,22 @@ main .banner .navigation .link {
   margin-left: 20px;
 }
 
-main .contact .contactButton {
-  background-color: var(--currentColor);
+main .slogan {
+  padding: 60px 0 0 0;
   color: #fff;
-  padding: 10px 30px;
-  border: 1px solid transparent;
 }
 
-main .contact .contactButton:hover {
-  background-color: transparent;
-  border: 1px solid var(--currentColor);
-  color: #000;
+main .slogan .title {
+  font-size: 64px;
+  font-family: montserrat;
+}
+
+main .slogan .title2 {
+  margin: 20px 0;
+}
+
+.aboutButton {
+  margin-top: 20px;
+  display: block;
+  width: fit-content;
 }
