@@ -53,3 +53,34 @@ header .headerTop .left .phoneNumber {
 header .headerTop .right .socialMediaIcon {
   margin-left: 20px;
 }
+
+.banner {
+  background-image: url(../images/banner.png);
+  padding: 30px;
+}
+
+main .banner .navbar {
+  justify-content: space-between;
+  background-color: #fff;
+  height: 70px;
+  padding: 0 50px;
+  align-items: center;
+}
+
+main .banner .navigation .link {
+  color: #000;
+  margin-left: 20px;
+}
+
+main .contact .contactButton {
+  background-color: var(--currentColor);
+  color: #fff;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+}
+
+main .contact .contactButton:hover {
+  background-color: transparent;
+  border: 1px solid var(--currentColor);
+  color: #000;
+}
