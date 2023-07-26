@@ -1,3 +1,12 @@
+:root {
+  --currentColor: #b90470;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/poppins/Poppins-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +14,42 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-family: poppins;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.row {
+  display: flex;
+}
+
+/********************************************/
+header {
+  background-color: var(--currentColor);
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+header .headerTop {
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .headerTop .left .phoneNumber,
+header .headerTop .right .socialMediaIcon {
+  color: #fff;
+}
+
+header .headerTop .left .phoneNumber {
+  margin-right: 30px;
+}
+
+header .headerTop .right .socialMediaIcon {
+  margin-left: 20px;
 }
