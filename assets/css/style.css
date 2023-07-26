@@ -37,6 +37,9 @@
   color: #fff;
   padding: 10px 30px;
   border: 1px solid transparent;
+  box-shadow: 0 0 10px var(--currentColor);
+  border-radius: 4px;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .myButton:hover {
@@ -73,8 +76,10 @@ header .headerTop .right .socialMediaIcon {
 }
 
 .banner {
-  background-image: url(../images/banner.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/banner.png);
   padding: 60px 0;
+  background-position: center;
 }
 
 main .banner .navbar {
@@ -88,6 +93,10 @@ main .banner .navbar {
 main .banner .navigation .link {
   color: #000;
   margin-left: 20px;
+}
+
+main .banner .navigation .link:hover {
+  border-bottom: 2px solid var(--currentColor);
 }
 
 main .slogan {
@@ -104,8 +113,17 @@ main .slogan .title2 {
   margin: 20px 0;
 }
 
+main .slogan p {
+  width: 58ch;
+  text-align: justify;
+}
+
 .aboutButton {
   margin-top: 20px;
   display: block;
   width: fit-content;
+}
+
+.aboutButton:hover {
+  color: #fff;
 }
