@@ -128,12 +128,12 @@ main .slogan p {
   color: #fff;
 }
 
-main .aboutUs {
+main .aboutSection .aboutUs {
   padding: 50px 0;
 }
 
-main .aboutUs .left,
-main .aboutUs .right {
+main .aboutSection .aboutUs .left,
+main .aboutSection .aboutUs .right {
   width: 50%;
 }
 
@@ -143,10 +143,21 @@ main .aboutUs .title {
   position: relative;
 }
 
-main .aboutUs .title::before {
+main .aboutSection .aboutUs .title::before {
   content: "Haqqimizda";
   position: absolute;
   font-size: 15px;
   top: -20px;
   color: var(--currentColor);
+}
+
+main .aboutSection .aboutSectionImageAndContent img {
+  width: 100%;
+}
+
+main .aboutSection .aboutSectionImageAndContent .contentText {
+  text-align: center;
+  margin: 30px auto;
+  width: 80%;
+  color: #343a3e;
 }
