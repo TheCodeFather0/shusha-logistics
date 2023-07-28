@@ -127,3 +127,26 @@ main .slogan p {
 .aboutButton:hover {
   color: #fff;
 }
+
+main .aboutUs {
+  padding: 50px 0;
+}
+
+main .aboutUs .left,
+main .aboutUs .right {
+  width: 50%;
+}
+
+main .aboutUs .title {
+  font-size: 45px;
+  color: #343a3e;
+  position: relative;
+}
+
+main .aboutUs .title::before {
+  content: "Haqqimizda";
+  position: absolute;
+  font-size: 15px;
+  top: -20px;
+  color: var(--currentColor);
+}
