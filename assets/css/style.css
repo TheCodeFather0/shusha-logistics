@@ -137,18 +137,24 @@ main .aboutSection .aboutUs .right {
   width: 50%;
 }
 
-main .aboutUs .title {
+main .aboutUs .title,
+main .portfolioSection .portfolioTitle .title {
   font-size: 45px;
   color: #343a3e;
   position: relative;
 }
 
-main .aboutSection .aboutUs .title::before {
+main .aboutSection .aboutUs .title::before,
+main .portfolioSection .portfolioTitle .title::before {
   content: "Haqqimizda";
   position: absolute;
   font-size: 15px;
   top: -20px;
   color: var(--currentColor);
+}
+
+main .portfolioSection .portfolioTitle .title::before {
+  content: "Xidmətlər";
 }
 
 main .aboutSection .aboutSectionImageAndContent img {
@@ -160,4 +166,8 @@ main .aboutSection .aboutSectionImageAndContent .contentText {
   margin: 30px auto;
   width: 80%;
   color: #343a3e;
+}
+
+main .aboutSection {
+  padding: 50px 0;
 }
