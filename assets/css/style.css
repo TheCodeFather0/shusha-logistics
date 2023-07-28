@@ -171,3 +171,45 @@ main .aboutSection .aboutSectionImageAndContent .contentText {
 main .aboutSection {
   padding: 50px 0;
 }
+
+main .portfolioSection .cards {
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+main .portfolioSection .cards .card {
+  width: calc(25% - 15px);
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px #ddd;
+  position: relative;
+}
+
+main .portfolioSection .cards .card img {
+  width: 100%;
+}
+
+main .portfolioSection .cards .card h2 {
+  color: var(--currentColor);
+  font-size: 20px;
+  padding: 10px;
+}
+
+main .portfolioSection .cards .card p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+main .portfolioSection .cards .card:nth-child(4),
+main .portfolioSection .cards .card:last-child {
+  top: -50px;
+}
+
+main .portfolioSection .cards .card:nth-child(2),
+main .portfolioSection .cards .card:nth-child(5) {
+  top: 50px;
+}
+
+main .portfolioSection .cards .card:first-child {
+  top: 100px;
+}
