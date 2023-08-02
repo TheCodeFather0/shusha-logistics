@@ -139,7 +139,8 @@ main .aboutSection .aboutUs .right {
 
 main .aboutUs .title,
 main .portfolioSection .portfolioTitle .title,
-main .mission .title {
+main .mission .title,
+main .teams .teamsContent .teamsLeftSection {
   font-size: 45px;
   color: #343a3e;
   position: relative;
@@ -147,7 +148,8 @@ main .mission .title {
 
 main .aboutSection .aboutUs .title::before,
 main .portfolioSection .portfolioTitle .title::before,
-main .mission .title::before {
+main .mission .title::before,
+main .teams .teamsContent .teamsLeftSection::before {
   content: "Haqqimizda";
   position: absolute;
   font-size: 15px;
@@ -265,4 +267,23 @@ main .mission .cards .card {
   width: 30%;
   border-radius: 5px;
   box-shadow: 0 0 15px 0 white;
+}
+
+
+main .teams .teamsContent .teamsLeftSection::before {
+  content: 'Əməkdaşlarımız';
+}
+
+main .teams .teamsContent {
+  /* align-items: baseline; */
+}
+
+main .teams .teamsContent .teamsLeftSection,
+main .teams .teamsContent .teamsRightSection {
+  width: 50%;
+}
+
+main .teams .teamsContent .teamsRightSection p {
+  color: #343A3E;
+  margin-top: 30px;
 }
