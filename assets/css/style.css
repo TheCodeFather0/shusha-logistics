@@ -88,6 +88,8 @@ main .banner .navbar {
   height: 70px;
   padding: 0 50px;
   align-items: center;
+  position: sticky;
+  inset: 0;
 }
 
 main .banner .navigation .link {
@@ -310,6 +312,8 @@ main .writeMe .writeMeContent {
 main .writeMe .writeMeContent .writeMeRightSection {
   box-shadow: 0 0 15px 0 #77777740;
   padding: 50px;
+  background-color: #fff;
+  z-index: 2;
 }
 
 main .writeMe .writeMeContent .writeMeRightSection a {
@@ -322,4 +326,48 @@ main .writeMe .writeMeContent .writeMeRightSection .socialMedia a {
   color: var(--currentColor);
   font-size: 22px;
   margin-right: 12px;
+}
+
+footer {
+  background-color: var(--currentColor);
+  height: 900px;
+  margin-top: -150px;
+  position: relative;
+  color: black;
+  clip-path: polygon(0 26%, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.footerTop {
+  height: 100%;
+  padding-top: 300px;
+}
+
+.footerSection {
+  background-color: white;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footerSection div a {
+  display: block;
+  color: var(--currentColor);
+  margin-bottom: 5px;
+}
+
+footer .footerBottom img,
+footer .footerText {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+footer .footerText {
+  background-color: rgba(255, 255, 255, 0.911);
+  padding: 15px 0;
+}
+
+footer .footerText .footerTextContent {
+  justify-content: space-between;
 }
