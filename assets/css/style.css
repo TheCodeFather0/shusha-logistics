@@ -140,7 +140,8 @@ main .aboutSection .aboutUs .right {
 main .aboutUs .title,
 main .portfolioSection .portfolioTitle .title,
 main .mission .title,
-main .teams .teamsContent .teamsLeftSection {
+main .teams .teamsContent .teamsLeftSection,
+main .writeMe .writeMeContent .writeMeLeftSection .title {
   font-size: 45px;
   color: #343a3e;
   position: relative;
@@ -149,7 +150,8 @@ main .teams .teamsContent .teamsLeftSection {
 main .aboutSection .aboutUs .title::before,
 main .portfolioSection .portfolioTitle .title::before,
 main .mission .title::before,
-main .teams .teamsContent .teamsLeftSection::before {
+main .teams .teamsContent .teamsLeftSection::before,
+main .writeMe .writeMeContent .writeMeLeftSection .title::before {
   content: "Haqqimizda";
   position: absolute;
   font-size: 15px;
@@ -274,12 +276,18 @@ main .teams .teamsContent .teamsLeftSection::before {
   content: 'Əməkdaşlarımız';
 }
 
+main .writeMe .writeMeContent .writeMeLeftSection .title::before {
+  content: 'Əlaqə';
+}
+
 main .teams .teamsContent {
-  /* align-items: baseline; */
+  margin-bottom: 40px;
 }
 
 main .teams .teamsContent .teamsLeftSection,
-main .teams .teamsContent .teamsRightSection {
+main .teams .teamsContent .teamsRightSection,
+main .writeMe .writeMeContent .writeMeLeftSection,
+main .writeMe .writeMeContent .writeMeRightSection {
   width: 50%;
 }
 
@@ -290,5 +298,28 @@ main .teams .teamsContent .teamsRightSection p {
 
 main .teams img {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 60px;
+}
+
+
+main .writeMe .writeMeContent {
+  margin-top: 60px;
+}
+
+
+main .writeMe .writeMeContent .writeMeRightSection {
+  box-shadow: 0 0 15px 0 #77777740;
+  padding: 50px;
+}
+
+main .writeMe .writeMeContent .writeMeRightSection a {
+  color: #000;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+main .writeMe .writeMeContent .writeMeRightSection .socialMedia a {
+  color: var(--currentColor);
+  font-size: 22px;
+  margin-right: 12px;
 }
