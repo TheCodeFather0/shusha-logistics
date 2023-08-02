@@ -138,14 +138,16 @@ main .aboutSection .aboutUs .right {
 }
 
 main .aboutUs .title,
-main .portfolioSection .portfolioTitle .title {
+main .portfolioSection .portfolioTitle .title,
+main .mission .title {
   font-size: 45px;
   color: #343a3e;
   position: relative;
 }
 
 main .aboutSection .aboutUs .title::before,
-main .portfolioSection .portfolioTitle .title::before {
+main .portfolioSection .portfolioTitle .title::before,
+main .mission .title::before {
   content: "Haqqimizda";
   position: absolute;
   font-size: 15px;
@@ -182,6 +184,7 @@ main .portfolioSection .cards .card {
   width: calc(25% - 15px);
   border: 1px solid #ddd;
   box-shadow: 0 0 10px #ddd;
+  background-color: #fff;
   position: relative;
 }
 
@@ -212,4 +215,54 @@ main .portfolioSection .cards .card:nth-child(5) {
 
 main .portfolioSection .cards .card:first-child {
   top: 100px;
+}
+
+main .mission {
+  background-color: var(--currentColor);
+  clip-path: polygon(0 0, 100% 37%, 100% 100%, 0% 100%);
+  z-index: -1;
+  position: relative;
+  top: -150px;
+  padding: 50px 0;
+}
+
+main .mission .title:first-child {
+  color: #fff;
+  margin-top: 200px;
+}
+
+main .mission .title::before {
+  content: "Prinsiplərimiz";
+  color: #fff;
+}
+
+main .mission .cards {
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+main .mission .cards .card .cardTitle {
+  margin: 0;
+  font-size: 25px;
+  color: var(--currentColor);
+}
+
+main .mission .cards .card p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+main .mission .cards .card img {
+  width: 91px;
+  height: 96px;
+  float: right;
+}
+
+main .mission .cards .card {
+  background-color: white;
+  padding: 15px 15px 5px 15px;
+  color: black;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 0 white;
 }
