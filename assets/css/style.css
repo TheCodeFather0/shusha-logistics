@@ -287,3 +287,8 @@ main .teams .teamsContent .teamsRightSection p {
   color: #343A3E;
   margin-top: 30px;
 }
+
+main .teams img {
+  width: 100%;
+  margin-top: 30px;
+}
